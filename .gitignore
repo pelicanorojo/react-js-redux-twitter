@@ -1,0 +1,16 @@
+node_modules/
+bower_components/
+coverage/
+dist/
+public/
+.sass-cache/
+.idea/
+.tmp/
+.env
+.DS_Store
+npm-debug.log
+
+
+# do not version files and folders
+/dnv
+*.dnv.*

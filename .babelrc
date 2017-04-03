@@ -1,0 +1,9 @@
+{
+  "presets": [
+    ["env", {/* Expecifying our target, env preset can infer with plugins to use */
+        "targets": {
+          "browsers": ["> 1%", "last 2 versions"]
+        }
+    }]
+  ]
+}

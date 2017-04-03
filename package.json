@@ -1,0 +1,36 @@
+{
+  "name": "react-js-redux-twitter",
+  "version": "1.0.0",
+  "description": "A Twitter Search SPA",
+  "scripts": {
+    "start": "npm run transpilewp && npm run server:dev",
+    "server:dev": "webpack-dev-server --config dist/config/webpack.config.js --profile --watch --debug",
+    "build": "npm run transpilewp && npm run runwp",
+    "runwp": "webpack --display-error-details --watch --config dist/config/webpack.config.js",
+    "transpilewp": "babel config/webpack.config.js -d dist",
+    "test": "none"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:pelicanorojo/react-js-redux-twitter.git"
+  },
+  "author": "Pablo E Benito - <bioingbenito@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "babel-preset-env": "^1.2.2",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-react": "^6.23.0",
+    "copy-webpack-plugin": "^4.0.1",
+    "react-hot-loader": "^3.0.0-beta.6",
+    "webpack": "^2.3.1",
+    "webpack-config-utils": "2.3.0",
+    "webpack-dev-server": "^2.4.2"
+  }
+}
